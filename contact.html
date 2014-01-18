@@ -1,0 +1,22 @@
+<?php
+
+    // VARS
+    $FirstName=$_GET["FirstName"];
+    $LastName=$_GET["LastName"];
+    $Email=$_GET["Email"];
+    $MessageText=$_GET["MessageText"];
+    $Headers = "From:" . $Email;
+
+    //VALIDATION
+    if(
+    $FirstName=="" ||
+    $LastName=="" ||
+    $Email=="" ||
+    $MessageText==""
+    ) {
+        echo "Error";
+    } else {
+        mail("kdhjr23@gmail.com","mobile app message",$MessageText, $Headers);
+        echo "Success";
+    }
+?>

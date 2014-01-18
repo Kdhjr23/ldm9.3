@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+<link rel="stylesheet" type="text/css" href="css/bshop.css">
+	<script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="scripts/cordova-2.0.0.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.2.1.js"></script>
+
+  </head>
+  <body>
+  <div data-role="page" id="five" data-theme="e">
+<div data-role="header" data-theme="e" data-position="fixed" >
+		<h1></h1>
+		<a href="menu.html" class="ui-btn-left" data-rel="back" data-inline="true">Back</a>
+	</div><!-- /header -->  
+    <img src = "images/audio.png" alt = "live" width="100%" height="200px"/>
+	   <hr>
+	  <center><h4>First Fruit Giving, Part 1</h4></center>
+  	  <div id="playcontrols">
+		  <a href="#" id="playbutton" data-role="button" onClick="html5audio.play();return false;"> Play</a>
+		  <a href="#" id="activityindicator" data-role="button"onClick="html5audio.stop();return false;">Loading</a>
+		  <a href="#" id="stopbutton" data-role="button" onClick="html5audio.stop();return false;">Stop</a>
+	  </div>
+	  <div id="textpositiondiv">Time played: <span id="textposition">stopped</span></div>
+	  <script type="text/javascript">
+		  playButton = document.getElementById('playbutton');
+		  stopButton = document.getElementById('stopbutton');
+		  activityIndicator = document.getElementById('activityindicator');
+		  textPosition = document.getElementById('textposition');
+	  </script>
+	  <hr>
+			          <div data-role="footer" data-position="fixed" data-theme="e" data-position="fixed">
+<div data-role="navbar" data-grid="d" data-theme="e" data-type="horizontal" data-position="fixed">
+	<ul>
+	<li><a class="btn"  data-transition="slide" data-role="button" href="menu.html" ><i class="icon-th icon-2x"></i><br><h4>Menu</h4></a></li>
+  <li><a class="btn" data-transition="slide"  data-role="button" href="aboutus.html"><i class="icon-info-sign icon-2x"></i><br><h4>Info</h4></a></li>
+  <li><a class="btn"  data-transition="slide"  data-role="button" href="live.html"><i class="icon-youtube-play icon-2x"></i><br><h4>Live</h4></a></li>
+  <li><a class="btn" data-transition="slide"  data-role="button" href="music.html"><i class="icon-youtube-sign icon-2x"></i><br><h4>Video</h4></a></li>
+   <li><a class="btn" data-transition="slide" data-role="button"  href="map.html"><i class="icon-map-marker icon-2x"></i><br><h4>Map</h4></a></li>
+  </ul></div>
+</div>
+	  </div>
+  </body>
+</html>
